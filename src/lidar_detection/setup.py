@@ -20,6 +20,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'bounding_box_filter_node = lidar_detection.bounding_box_filter:main',
+            'ground_removal_node = lidar_detection.ground_removal:main',
+            'clustering_node = lidar_detection.clustering:main',
         ],
     },
 )
